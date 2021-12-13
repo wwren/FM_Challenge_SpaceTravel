@@ -1,13 +1,56 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* reset */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--off-white);
+}
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+:root {
+  /* color */
+  --black: #0b0d17;
+  --purple: #d0d6f9;
+  --off-white: #ffffff;
+  /* font size */
+  --header1: 150px;
+  --header2: 100px;
+  --header3: 56px;
+  --header4: 32px;
+  --header5: 28px;
+  --header5--letter-spacing: 4.75px;
+  --subheader1: 28px;
+  --subheader2: 14px;
+  --subheader2--letter-spacing: 2.35px;
+  --nav-text: 16px;
+  --nav-text--letter-spacing: 2.7px;
+  /* font family */
+  --barlow-condensed-regular: "Barlow Condensed";
+  --bellefair-regular: "Bellefair";
+  --barlow: "Bellefair";
 }
