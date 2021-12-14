@@ -6,6 +6,12 @@ nav {
   width: 100vw;
   align-items: center;
   text-transform: uppercase;
+  padding-top: 20px;
+}
+
+.nav--sidebar-open {
+  position: relative;
+  padding-top: 0;
 }
 
 nav .nav__left-panel {
@@ -16,6 +22,20 @@ nav .nav__left-panel {
 
 .nav-item__number {
   margin-right: 10px;
+  font-weight: bold;
+}
+
+.nav__logo.sidebar-open {
+  position: absolute;
+  top: 20px;
+}
+
+.sidebar__logo-open {
+  width: 40px;
+}
+
+.nav__horizontal-line {
+  display: none;
 }
 
 .nav__right-panel {
@@ -91,6 +111,10 @@ nav .nav__left-panel {
 
 /* ipad and desktop */
 @media only screen and (min-width: 768px) and (max-width: 1440px), (min-width: 1440px) {
+  nav {
+    padding-top: 0;
+  }
+
   nav ul.nav__right-panel {
     display: flex;
     justify-content: space-around;
