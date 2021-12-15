@@ -1,0 +1,39 @@
+.crew {
+  background-image: url("../../assets/crew/background-crew-mobile.jpg");
+}
+
+.crew .wrapper {
+  height: 450px;
+  justify-content: space-between;
+}
+
+.crew .wrapper > div {
+  width: 327px;
+}
+
+.crew__picture-panel {
+  width: auto;
+  height: 223px;
+}
+
+.crew__text-panel h5 {
+  opacity: 0.5;
+}
+
+.crew__text-panel .text--highlight--crew {
+  font-size: 24px;
+}
+
+/* ipad only */
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  .crew {
+    background-image: url("../../assets/crew/background-crew-tablet.jpg");
+  }
+}
+
+/* desktop only */
+@media only screen and (min-width: 1440px) {
+  .crew {
+    background-image: url("../../assets/crew/background-crew-desktop.jpg");
+  }
+}
