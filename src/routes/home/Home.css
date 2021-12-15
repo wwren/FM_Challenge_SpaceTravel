@@ -1,20 +1,11 @@
+/* TODO fix URL */
 .home {
   background-image: url("../../assets/home/background-home-mobile.jpg");
 }
 
-.home__wrapper {
-  display: flex;
-  flex-direction: column;
-  color: var(--off-white);
-  text-align: center;
-  position: relative;
-  top: 112px;
-  margin-left: 24px;
-  margin-right: 24px;
-  height: 70vh;
-  justify-content: space-between;
+.home .wrapper {
+  height: 60vh;
 }
-
 .home__text--first-p {
   font-size: 16px;
   margin-top: 0;
@@ -24,10 +15,7 @@
   font-family: var(--barlow-condensed-regular);
 }
 
-.home__text--highlight {
-  font-size: 80px;
-  height: 100px;
-  line-height: 100px;
+.text--highlight {
   margin-top: 10px;
   margin-bottom: 10px;
   color: var(--off-white);
@@ -37,7 +25,13 @@
   font-family: var(--bellefair-regular);
 }
 
-.home__text--last-p {
+.text--highlight.text--highlight--home {
+  font-size: 80px;
+  height: 100px;
+  line-height: 100px;
+}
+
+.text--last-p {
   font-size: 15px;
   line-height: 25px;
   margin-left: auto;
@@ -64,18 +58,11 @@
     background-image: url("../../assets/home/background-home-tablet.jpg");
   }
 
-  .home__wrapper {
-    top: 202px;
-    margin-left: 150px;
-    margin-right: 150px;
-    height: 700px;
-  }
-
   .home__text--first-p {
     font-size: 20px;
   }
 
-  .home__text--highlight {
+  .text--highlight.text--highlight--home {
     font-size: var(--header1);
     margin-top: 30px;
     margin-bottom: 30px;
@@ -83,7 +70,7 @@
     line-height: 150px;
   }
 
-  .home__text--last-p {
+  .text--last-p {
     width: 444px;
     line-height: 28px;
     font-size: 16px;
@@ -102,15 +89,6 @@
     background-image: url("../../assets/home/background-home-desktop.jpg");
   }
 
-  .home__wrapper {
-    flex-direction: row;
-    top: 387px;
-    margin-left: 165px;
-    margin-right: 165px;
-    height: 382px;
-    justify-content: space-between;
-  }
-
   .home__left-panel {
     width: 450px;
   }
@@ -121,13 +99,13 @@
     letter-spacing: 4.725px;
   }
 
-  .home__text--highlight {
+  .text--highlight.text--highlight--home {
     font-size: var(--header1);
     height: 172px;
     line-height: 172px;
   }
 
-  .home__text--last-p {
+  .text--last-p {
     line-height: 32px;
     font-size: 18px;
   }
@@ -143,8 +121,4 @@
     height: 242px;
     line-height: 22.92px;
   }
-}
-
-/* ipad and desktop */
-@media only screen and (min-width: 768px) and (max-width: 1440px), (min-width: 1440px) {
 }

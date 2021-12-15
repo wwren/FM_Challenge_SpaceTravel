@@ -97,6 +97,7 @@ nav .nav__left-panel {
   }
 
   .nav__horizontal-line {
+    display: block;
     width: 90%;
     border-top: 1px solid var(--off-white);
     transform: translateX(10%);

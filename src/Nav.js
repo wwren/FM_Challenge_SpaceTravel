@@ -11,15 +11,11 @@ import NavItem from "./commonComponents/NavItem";
 import Overlay from "./commonComponents/Overlay";
 function Nav() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  console.log(sidebarOpen);
   const navLink = useMemo(() => getNavigation(), []);
-
   const { width } = useWindowDimensions();
 
-  console.log(width);
-
   return (
-    <div>
+    <>
       <nav className={`${sidebarOpen ? "nav--sidebar-open" : ""}`}>
         <div className="nav__left-panel">
           <div className={`nav__logo ${sidebarOpen ? "sidebar-open" : ""}`}>
@@ -27,7 +23,7 @@ function Nav() {
           </div>
           <div className="nav__horizontal-line"></div>
         </div>
-        {width <= 540 ? (
+        {width < 768 ? (
           sidebarOpen ? (
             <Overlay setSidebarOpen={setSidebarOpen}>
               <NavItem navLink={navLink} />
@@ -44,7 +40,7 @@ function Nav() {
         )}
       </nav>
       <Outlet />
-    </div>
+    </>
   );
 }
 
