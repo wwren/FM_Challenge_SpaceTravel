@@ -156,8 +156,16 @@ export const distanceBottomTitle = {
   title2: "est. travel time",
 };
 
-export function getInit() {
-  return init;
+export function getDestination() {
+  return init.destinations;
+}
+
+export function getCrew() {
+  return init.crew;
+}
+
+export function getTechnology() {
+  return init.technology;
 }
 
 export function getNavigation() {

@@ -1,14 +1,14 @@
 import { useState, useMemo } from "react";
 import "./Nav.css";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { getNavigation } from "./space-data.js";
 import { ReactComponent as Logo } from "./assets/shared/logo.svg";
-
 import { ReactComponent as IconOpen } from "./assets/shared/icon-hamburger.svg";
 import useWindowDimensions from "./customHooks/getDimensions";
 import NavList from "./commonComponents/NavList";
 import NavItem from "./commonComponents/NavItem";
 import Overlay from "./commonComponents/Overlay";
+
 function Nav() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const navLink = useMemo(() => getNavigation(), []);
