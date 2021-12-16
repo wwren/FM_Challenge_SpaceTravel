@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useCallback } from "react";
 import MainWrapper from "../../commonComponents/MainWrapper";
 import { pageTopLeftIntro, distanceBottomTitle, getDestination } from "../../space-data";
 import "./Destination.css";
@@ -8,10 +8,9 @@ function Destination() {
   const [focusContent, setFocusContent] = useState(destination[0]);
   const controlRef = useRef(null);
 
-  const _handleClick = (e, idx) => {
+  const _handleClick = useCallback((e, idx) => {
     setFocusContent(destination[idx]);
-
-    // remove .avtive to classList
+    // remove .active to classList
     if (controlRef) {
       controlRef.current.childNodes.forEach((node, i) => {
         if (node.classList.contains("active") && idx !== i) {
@@ -20,7 +19,7 @@ function Destination() {
       });
     }
     e.target.classList.add("active");
-  };
+  }, []);
 
   return (
     <main className="destination">

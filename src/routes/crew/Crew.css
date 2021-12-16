@@ -16,6 +16,37 @@
   height: 223px;
 }
 
+.crew .wrapper div:first-child {
+  border-bottom: 1px solid #383b4b;
+}
+
+.crew .wrapper div.crew__control-panel {
+  width: 88px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.crew__control-dot {
+  padding: 5px;
+  background-color: var(--off-white);
+  opacity: 0.17;
+  mix-blend-mode: normal;
+  border-radius: 50%;
+}
+
+.crew__control-dot:hover {
+  opacity: 0.5;
+}
+
+.crew__text-panel {
+  height: 250px;
+}
+
+.crew__control-dot.active {
+  opacity: 1;
+}
+
 .crew__text-panel h5 {
   opacity: 0.5;
 }
