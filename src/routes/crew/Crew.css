@@ -3,8 +3,8 @@
 }
 
 .crew .wrapper {
-  height: 450px;
-  justify-content: space-between;
+  height: 550px;
+  justify-content: unset;
 }
 
 .crew .wrapper > div {
@@ -16,8 +16,14 @@
   height: 223px;
 }
 
-.crew .wrapper div:first-child {
+.crew .wrapper div:first-child:not(.crew__control-panel) {
   border-bottom: 1px solid #383b4b;
+}
+
+.crew__text-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .crew .wrapper div.crew__control-panel {
@@ -60,11 +66,93 @@
   .crew {
     background-image: url("../../assets/crew/background-crew-tablet.jpg");
   }
+
+  .crew .wrapper {
+    flex-direction: column-reverse;
+    height: fit-content;
+    gap: 50px;
+  }
+
+  .crew .wrapper > div {
+    width: 600px;
+  }
+
+  .crew__picture-panel {
+    width: 458px;
+    height: auto;
+  }
+
+  .crew__text-panel {
+    height: 200px;
+  }
+
+  .crew__text-panel h5 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .crew__text-panel .text--highlight--crew {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .text--last-p {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 
 /* desktop only */
 @media only screen and (min-width: 1440px) {
   .crew {
     background-image: url("../../assets/crew/background-crew-desktop.jpg");
+  }
+
+  .crew .wrapper {
+    flex-direction: row-reverse;
+    gap: 100px;
+    width: 85vw;
+    justify-content: space-between;
+    height: fit-content;
+  }
+
+  .crew .wrapper > div {
+    width: fit-content;
+  }
+
+  .crew__picture-panel {
+    width: auto;
+    height: 712px;
+  }
+
+  .crew__text-control {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .crew__text-panel h5 {
+    font-size: 32px;
+    line-height: 37px;
+  }
+
+  .crew__text-panel .text--highlight--crew {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .text--last-p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+/* ipad only */
+@media only screen and (min-width: 768px) and (max-width: 1440px), (min-width: 1440px) {
+  .crew .wrapper div:first-child:not(.crew__control-panel) {
+    border-bottom: none;
+  }
+
+  .crew__text-control {
+    flex-direction: column-reverse;
   }
 }

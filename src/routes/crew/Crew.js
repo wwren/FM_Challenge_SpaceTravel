@@ -33,21 +33,23 @@ function Crew() {
             alt={focusContent.name}
           />
         </div>
-        <div className="crew__control-panel" ref={controlRef}>
-          {crew.map((ele, idx) => {
-            return (
-              <button
-                key={crew.name}
-                onClick={(e) => _handleClick(e, idx)}
-                className={`crew__control-dot ${idx == 0 ? "active" : ""}`}
-              ></button>
-            );
-          })}
-        </div>
-        <div className="crew__text-panel">
-          <h5 className="text--highlight">{focusContent.role}</h5>
-          <h4 className="text--highlight text--highlight--crew"> {focusContent.name}</h4>
-          <p className="text--last-p">{focusContent.bio}</p>
+        <div className="crew__text-control">
+          <div className="crew__control-panel" ref={controlRef}>
+            {crew.map((ele, idx) => {
+              return (
+                <button
+                  key={crew.name}
+                  onClick={(e) => _handleClick(e, idx)}
+                  className={`crew__control-dot ${idx == 0 ? "active" : ""}`}
+                ></button>
+              );
+            })}
+          </div>
+          <div className="crew__text-panel">
+            <h5 className="text--highlight">{focusContent.role}</h5>
+            <h4 className="text--highlight text--highlight--crew"> {focusContent.name}</h4>
+            <p className="text--last-p">{focusContent.bio}</p>
+          </div>
         </div>
       </MainWrapper>
     </main>

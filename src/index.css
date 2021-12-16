@@ -34,6 +34,7 @@ main {
   width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: auto;
 }
 
 h2,
