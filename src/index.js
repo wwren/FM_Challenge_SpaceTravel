@@ -6,6 +6,7 @@ import Nav from "./Nav";
 import Home from "./routes/home/Home.js";
 import Destination from "./routes/destination/Destination.js";
 import Crew from "./routes/crew/Crew";
+import Technology from "./routes/technology/Technology";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.render(
           <Route index element={<Home />} />
           <Route path="destination" element={<Destination />} />
           <Route path="crew" element={<Crew />} />
+          <Route path="technology" element={<Technology />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,11 +1,11 @@
-/* TODO fix URL */
 .home {
   background-image: url("../../assets/home/background-home-mobile.jpg");
 }
 
 .home .wrapper {
-  height: 450px;
+  height: 445px;
 }
+
 .home__text--first-p {
   font-size: 16px;
   margin-top: 0;
@@ -120,5 +120,12 @@
     width: 242px;
     height: 242px;
     line-height: 22.92px;
+  }
+}
+
+/* ipad only */
+@media only screen and (min-width: 768px) and (max-width: 1440px), (min-width: 1440px) {
+  .home .wrapper {
+    height: fit-content;
   }
 }

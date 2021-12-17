@@ -1,0 +1,28 @@
+.crew__text-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.control-panel {
+  width: 88px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.control-dot {
+  padding: 5px;
+  background-color: var(--off-white);
+  opacity: 0.17;
+  mix-blend-mode: normal;
+  border-radius: 50%;
+}
+
+.control-button:hover {
+  opacity: 0.5;
+}
+
+.control-button.active {
+  opacity: 1;
+}

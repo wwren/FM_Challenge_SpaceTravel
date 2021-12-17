@@ -45,20 +45,8 @@
   opacity: 0.5;
 }
 
-.crew__text-panel {
-  height: 250px;
-}
-
 .crew__control-dot.active {
   opacity: 1;
-}
-
-.crew__text-panel h5 {
-  opacity: 0.5;
-}
-
-.crew__text-panel .text--highlight--crew {
-  font-size: 24px;
 }
 
 /* ipad only */
@@ -80,25 +68,6 @@
   .crew__picture-panel {
     width: 458px;
     height: auto;
-  }
-
-  .crew__text-panel {
-    height: 200px;
-  }
-
-  .crew__text-panel h5 {
-    font-size: 24px;
-    line-height: 28px;
-  }
-
-  .crew__text-panel .text--highlight--crew {
-    font-size: 40px;
-    line-height: 46px;
-  }
-
-  .text--last-p {
-    font-size: 16px;
-    line-height: 28px;
   }
 }
 
@@ -129,24 +98,9 @@
     align-items: flex-start;
     text-align: left;
   }
-
-  .crew__text-panel h5 {
-    font-size: 32px;
-    line-height: 37px;
-  }
-
-  .crew__text-panel .text--highlight--crew {
-    font-size: 56px;
-    line-height: 64px;
-  }
-
-  .text--last-p {
-    font-size: 18px;
-    line-height: 32px;
-  }
 }
 
-/* ipad only */
+/* ipad only and destop*/
 @media only screen and (min-width: 768px) and (max-width: 1440px), (min-width: 1440px) {
   .crew .wrapper div:first-child:not(.crew__control-panel) {
     border-bottom: none;

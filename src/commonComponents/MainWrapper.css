@@ -10,7 +10,7 @@
   height: 70vh;
   justify-content: space-between;
   align-items: center;
-  overflow-y: auto;
+  gap: 50px;
 }
 
 .wrapper__topleft-text {

@@ -1,0 +1,51 @@
+.text-panel {
+  height: 250px;
+}
+
+.text-panel h5 {
+  opacity: 0.5;
+}
+
+.text-panel .text--highlight--common {
+  font-size: 24px;
+}
+
+/* ipad only */
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  .text-panel {
+    height: 200px;
+  }
+
+  .text-panel h5 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .text-panel .text--highlight--common {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .text--last-p.text-box {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+/* desktop only */
+@media only screen and (min-width: 1440px) {
+  .text-panel h5 {
+    font-size: 32px;
+    line-height: 37px;
+  }
+
+  .text-panel .text--highlight--common {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .text--last-p.text-box {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
