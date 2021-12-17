@@ -4,7 +4,7 @@ import TextPanel from "../../commonComponents/TextPanel";
 import { pageTopLeftIntro, getCrew } from "../../space-data";
 import ControlPanel from "../../commonComponents/ControlPanel";
 import "./Crew.css";
-// import $ from "jquery";
+//import $ from "jquery";
 
 //TODO consider add swipe event
 function Crew() {
@@ -14,14 +14,14 @@ function Crew() {
   return (
     <main className="crew">
       <MainWrapper text={pageTopLeftIntro.crew}>
-        <div>
+        <div className="image-container">
           <img
             className="crew__picture-panel"
             src={require(`../../assets${focusContent.images.png}`).default}
             alt={focusContent.name}
           />
         </div>
-        <div className="crew__text-control">
+        <div className="text-control crew__text-control">
           <ControlPanel content={crew} setContent={setFocusContent} hasButtonText={false} hasButtonIdx={false} />
           <TextPanel subheader={focusContent.role} header={focusContent.name} paragraph={focusContent.bio} />
         </div>

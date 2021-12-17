@@ -1,17 +1,53 @@
-.crew__text-control {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .control-panel {
-  width: 88px;
+  width: 237.5px;
+  height: 28px;
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  width: 237.5px;
+  align-items: center;
+  align-self: center;
 }
 
-.control-dot {
+.control-button {
+  cursor: pointer;
+}
+
+.button-text {
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  color: var(--off-white);
+  font-family: var(--barlow-condensed-regular);
+  font-size: 14px;
+  height: 100%;
+  margin-right: 10px;
+  position: relative;
+}
+
+.button-text.active::after,
+.button-text:hover::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: var(--off-white);
+  bottom: 0;
+  left: 0;
+}
+
+.button-dot:hover,
+.button-text:hover::after {
+  opacity: 0.5;
+}
+
+.button-dot.active,
+.control-button.active {
+  opacity: 1;
+}
+
+.button-dot {
   padding: 5px;
   background-color: var(--off-white);
   opacity: 0.17;
@@ -19,10 +55,47 @@
   border-radius: 50%;
 }
 
-.control-button:hover {
-  opacity: 0.5;
+.button-idx {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  color: white;
 }
 
-.control-button.active {
-  opacity: 1;
+.button-idx:hover {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.button-idx.active {
+  border: none;
+  background-color: var(--off-white);
+  color: black;
+}
+
+/* ipad only */
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  .control-panel {
+    width: 285px;
+    height: 34px;
+  }
+}
+
+/* desktop only */
+@media only screen and (min-width: 1440px) {
+  .control-panel {
+    align-self: flex-start;
+  }
+
+  .control-panel .button-text {
+    letter-spacing: 2.7px;
+  }
+}
+
+/* ipad and desktop only */
+@media only screen and (min-width: 768px) and (max-width: 1440px), (min-width: 1440px) {
+  .control-panel .button-text {
+    font-size: 16px;
+  }
 }

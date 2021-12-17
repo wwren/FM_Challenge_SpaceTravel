@@ -4,6 +4,7 @@
 
 .home .wrapper {
   height: 445px;
+  gap: 50px;
 }
 
 .home__text--first-p {

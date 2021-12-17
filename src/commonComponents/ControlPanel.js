@@ -1,5 +1,5 @@
 import React, { useState, useRef, useCallback } from "react";
-
+import "./ControlPanel.css";
 function ControlPanel({ content, setContent, hasButtonText, hasButtonIdx }) {
   const controlRef = useRef(null);
 
