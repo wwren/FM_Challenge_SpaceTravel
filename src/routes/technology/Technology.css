@@ -52,7 +52,7 @@
 
   .technology .wrapper {
     flex-direction: row-reverse;
-    width: 100vw;
+    /* width: 100vw; */
     text-align: left;
     justify-content: flex-end;
     gap: 80px;

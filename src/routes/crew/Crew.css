@@ -62,7 +62,7 @@
   .crew .wrapper {
     flex-direction: row-reverse;
     gap: 100px;
-    width: 85vw;
+    /* width: 85vw; */
     justify-content: space-between;
     height: fit-content;
   }
