@@ -7,6 +7,7 @@ import Home from "./routes/home/Home.js";
 import Destination from "./routes/destination/Destination.js";
 import Crew from "./routes/crew/Crew";
 import Technology from "./routes/technology/Technology";
+import Footer from "./commonComponents/Footer";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,6 +21,7 @@ ReactDOM.render(
         </Route>
       </Routes>
     </BrowserRouter>
+    <Footer />
   </React.StrictMode>,
   document.getElementById("root")
 );
