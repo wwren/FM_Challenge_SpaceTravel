@@ -3,7 +3,8 @@
 }
 
 .technology .wrapper {
-  justify-content: flex-end;
+  justify-content: space-evenly;
+  height: 60vh;
 }
 
 .technology .control-panel {
@@ -33,6 +34,13 @@
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
   .technology {
     background-image: url("../../assets/technology/background-technology-tablet.jpg");
+  }
+
+  .technology__picture-panel {
+    width: 100vw;
+    height: auto;
+    max-height: 310px;
+    max-width: 768px;
   }
 }
 

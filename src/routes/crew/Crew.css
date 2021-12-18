@@ -5,6 +5,7 @@
 .crew .wrapper {
   height: 550px;
   justify-content: unset;
+  gap: 20px;
 }
 
 .crew .wrapper > div {
