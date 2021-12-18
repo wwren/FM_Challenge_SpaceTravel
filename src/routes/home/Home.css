@@ -14,6 +14,7 @@
   letter-spacing: 3.38px;
   line-height: 24px;
   font-family: var(--barlow-condensed-regular);
+  text-transform: uppercase;
 }
 
 .text--highlight {
