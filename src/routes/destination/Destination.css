@@ -55,6 +55,19 @@
   color: var(--off-white);
 }
 
+.rotate {
+  animation: rotate 150s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+
 /* ipad only */
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
   .destination {

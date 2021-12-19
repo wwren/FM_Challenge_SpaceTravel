@@ -12,7 +12,7 @@ function Destination() {
     <main className="destination">
       <MainWrapper text={pageTopLeftIntro.destinations}>
         <img
-          className="destination__left-panel"
+          className="destination__left-panel rotate"
           src={require(`../../assets${focusContent.images.png}`).default}
           alt={focusContent.name}
         />

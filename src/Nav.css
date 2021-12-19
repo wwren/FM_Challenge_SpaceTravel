@@ -72,7 +72,7 @@ nav .nav__left-panel {
 }
 
 /* TODO Not working */
-.nav__right-panel li a:active::after {
+.nav__right-panel li a.active::after {
   opacity: 1;
   visibility: visible;
   transform: scaleX(1);

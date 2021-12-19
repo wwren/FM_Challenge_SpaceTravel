@@ -1,15 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function NavItem({ navLink }) {
   return (
     <>
       {navLink.map((navEle) => (
         <li key={navEle.id}>
-          <Link to={navEle.link}>
+          <NavLink to={navEle.link} className={({ isActive }) => (isActive ? "active" : "")}>
             <span className="nav-item__number">{navEle.id}</span>
             <span className="nav-item__text">{navEle.name}</span>
-          </Link>
+          </NavLink>
         </li>
       ))}
     </>
