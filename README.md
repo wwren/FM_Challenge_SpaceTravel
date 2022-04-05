@@ -1,4 +1,4 @@
-# Job List in React & Redux :eyes:
+# Space Travel in React & Redux :eyes:
 
 <p>
 <img src="./desktop.png" width="90%">
